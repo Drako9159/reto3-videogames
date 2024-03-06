@@ -1,0 +1,103 @@
+{
+  "games": [
+    {
+      "title": "The Legend of Adventure",
+      "description": "Embárcate en una épica aventura en un mundo lleno de misterios y desafíos.",
+      "releaseDate": "2023-05-15",
+      "image": "https://example.com/legend_of_adventure.jpg",
+      "rating": 4.8,
+      "downloads": 5000000,
+      "comingSoon": false
+    },
+    {
+      "title": "Galactic Battlefront",
+      "description": "Lucha contra fuerzas alienígenas en intensas batallas espaciales.",
+      "releaseDate": "2023-08-22",
+      "image": "https://example.com/galactic_battlefront.jpg",
+      "rating": 4.5,
+      "downloads": 3000000,
+      "comingSoon": false
+    },
+    {
+      "title": "Virtual Reality Racer",
+      "description": "Experimenta la emoción de las carreras en realidad virtual con gráficos impresionantes.",
+      "releaseDate": "2023-10-10",
+      "image": "https://example.com/vr_racer.jpg",
+      "rating": 4.9,
+      "downloads": 2000000,
+      "comingSoon": true
+    },
+    {
+      "title": "Epic Quest",
+      "description": "Embark on a journey through magical realms and conquer epic quests.",
+      "releaseDate": "2023-04-08",
+      "image": "https://example.com/epic_quest.jpg",
+      "rating": 4.7,
+      "downloads": 3500000,
+      "comingSoon": false
+    },
+    {
+      "title": "Cyberpunk Revolution",
+      "description": "Explore a futuristic city in this action-packed cyberpunk adventure.",
+      "releaseDate": "2023-06-20",
+      "image": "https://example.com/cyberpunk_revolution.jpg",
+      "rating": 4.6,
+      "downloads": 4500000,
+      "comingSoon": false
+    },
+    {
+      "title": "Pixelated Mayhem",
+      "description": "Go retro with this pixel art game and face challenging levels full of mayhem.",
+      "releaseDate": "2023-09-15",
+      "image": "https://example.com/pixelated_mayhem.jpg",
+      "rating": 4.4,
+      "downloads": 2500000,
+      "comingSoon": true
+    },
+    {
+      "title": "Fantasy Sports League",
+      "description": "Create and manage your fantasy sports team in this immersive gaming experience.",
+      "releaseDate": "2023-11-30",
+      "image": "https://example.com/fantasy_sports_league.jpg",
+      "rating": 4.8,
+      "downloads": 1800000,
+      "comingSoon": false
+    },
+    {
+      "title": "Space Odyssey",
+      "description": "Embark on a space exploration journey and discover the mysteries of the cosmos.",
+      "releaseDate": "2023-07-12",
+      "image": "https://example.com/space_odyssey.jpg",
+      "rating": 4.9,
+      "downloads": 2800000,
+      "comingSoon": false
+    },
+    {
+      "title": "Dungeon Crawler",
+      "description": "Delve into dark dungeons, defeat monsters, and uncover hidden treasures.",
+      "releaseDate": "2023-10-28",
+      "image": "https://example.com/dungeon_crawler.jpg",
+      "rating": 4.6,
+      "downloads": 3200000,
+      "comingSoon": true
+    },
+    {
+      "title": "Super Soccer Showdown",
+      "description": "Experience intense soccer matches with super-powered players in this sports extravaganza.",
+      "releaseDate": "2024-02-05",
+      "image": "https://example.com/super_soccer_showdown.jpg",
+      "rating": 4.7,
+      "downloads": 1500000,
+      "comingSoon": false
+    },
+    {
+      "title": "Mystical Puzzle Quest",
+      "description": "Solve mystical puzzles and unlock the secrets of an ancient civilization.",
+      "releaseDate": "2024-04-18",
+      "image": "https://example.com/mystical_puzzle_quest.jpg",
+      "rating": 3.4,
+      "downloads": 2000000,
+      "comingSoon": true
+    }
+  ]
+}

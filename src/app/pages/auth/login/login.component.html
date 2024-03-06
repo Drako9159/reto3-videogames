@@ -1,0 +1,16 @@
+<div class="text-center login-container">
+    <div class="form-signin" [formGroup]="loginForm">
+        <img class="mb-3" src="../../../../assets/user.svg" alt="" width="72" height="72"/>
+        <h1 class="h3 mb-3 font-weight-normal">Welcome</h1>
+        <label for="inputEmail" class="sr-only">Email</label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="Email" required formControlName="email"/>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required formControlName="password"/>
+
+
+        <button class="btn btn-lg btn-primary btn-block m-3" (click)="onLogin()">Login</button>
+        <button class="btn btn-lg btn-secondary btn-block" (click)="onSignIn()">Register</button>
+        <p class="mt-5 mb-3 text-muted">&copy; Login User</p>
+    </div>
+</div>
+

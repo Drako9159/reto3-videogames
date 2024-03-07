@@ -13,9 +13,9 @@ export class AuthService {
   }[] = [
     {
       id: 1,
-      name: 'master',
-      email: 'master@mail.com',
-      password: 'master',
+      name: 'admin',
+      email: 'admin@mail.com',
+      password: 'admin',
     },
   ];
   constructor(private router: Router) {
@@ -48,7 +48,6 @@ export class AuthService {
 
   isLogged() {
     const isLogged = localStorage.getItem('isLogged');
-    console.log(isLogged);
     if (isLogged) {
       return true;
     } else {

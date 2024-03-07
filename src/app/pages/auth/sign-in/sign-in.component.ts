@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import {
+  FormControl,
+  FormGroup,
+  ReactiveFormsModule,
+  Validators,
+} from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from '../../../service/auth.service';
 
@@ -27,14 +32,16 @@ export class SignInComponent implements OnInit {
     console.log('FormGroup: ', this.group);
     const values = this.group.value;
     const formIsValid = this.group.valid;
-    const controlName = this.group.get('name');
-    const controlNameIsValid = this.group.get('name')?.valid;
-    if (values.password === values.confirmPassword) {
-      console.log('Form is valid');
-      this.authService.signIn(values.name, values.email, values.password);
-      this.router.navigate(['/', 'most-populate']);
-    } else {
-      console.log('Password is invalid');
+    if (formIsValid) {
+      // const controlName = this.group.get('name');
+      // const controlNameIsValid = this.group.get('name')?.valid;
+      if (values.password === values.confirmPassword) {
+        console.log('Form is valid');
+        this.authService.signIn(values.name, values.email, values.password);
+        this.router.navigate(['/', 'most-populate']);
+      } else {
+        console.log('Password is invalid');
+      }
     }
   }
 }

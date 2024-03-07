@@ -5,6 +5,7 @@
     /* height: 90vh; */
     height: calc(100vh - 5rem);
     background-size: cover;
+    
 }
 .form-add {
     width: 100%;
@@ -15,7 +16,13 @@
     max-width: 800px;
     justify-content: center;
     box-shadow: 1px 1px 5px #7497a7a3;
+    font-weight: bold;
+
 }
+label, h1{
+    color: #5e5e5e;
+}
+
 
 
 

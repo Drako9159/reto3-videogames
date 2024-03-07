@@ -12,28 +12,20 @@
   background-color: #f95959;
   border-radius: 100%;
   margin: 8px;
- 
+  
 }
 
 .separator {
   justify-content: space-between;
 }
 .active-link {
-  color: #e3e3e3;
+  color: #f95959;
+  font-weight: bold;
+}
+.navbar-nav{
+  font-weight: bold;
 }
 
-.first-color {
-  background: #233142;
-}
-
-.second-color {
-  background: #455d7a;
-}
-
-.third-color {
-  background: #f95959;
-}
-
-.fourth-color {
-  background: #e3e3e3;
+.navbar-nav a:hover{
+  color: #f95959;
 }

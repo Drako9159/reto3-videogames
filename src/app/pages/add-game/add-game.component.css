@@ -22,23 +22,45 @@
 
 .form-container{
     display: flex;
-
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     gap: 8px;
 
 }
-.form-left{
+
+.form-container div{
     width: 100%;
 }
-.form-right{
+
+.group-1{
+    display: flex;
+    justify-content: space-between;
     width: 100%;
+    gap: 8px;
 }
-/* .form-right{
+.group-2 {
+    width: 100%;
+    
+}
+.group-3{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 8px;
+}
+.group-4{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 8px;
+}
+
+.form-group{
     display: flex;
     flex-direction: column;
-    background-color: blue;
-    width: 100%;
-} */
+    align-items: start;
+}
+
 
 .checkbox{
     font-weight: 400;

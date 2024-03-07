@@ -1,17 +1,17 @@
 <div class="text-center signin-container">
     <div class="form-signin" [formGroup]="group">
-        <img class="mb-4" src="../../../../assets/user.svg" alt="" width="72" height="72">
-        <h1 class="h3 mb-3 font-weight-normal">Register</h1>
+        <img class="mb-4" src="../../../../assets/user.svg" alt="icon-user" width="72" height="72" draggable="false">
+        <h1 class="h3 mb-3 font-weight-normal">Registrarse</h1>
         <label for="inputName" class="sr-only">Name</label>
         <input type="text" id="inputName" class="form-control" placeholder="Nombre" formControlName="name">
-        <label for="inputEmail" class="sr-only">Email</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email" formControlName="email">
+        <label for="inputEmail" class="sr-only">Correo</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Correo" formControlName="email">
         <label for="inputPassword" class="sr-only">Password</label>
         <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required formControlName="password">
         <label for="inputConfirmPassword" class="sr-only">Contraseña</label>
         <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Confirmar contraseña" required formControlName="confirmPassword">
         <button class="btn btn-lg btn-secondary btn-block" (click)="onSignIn()">Registrarse</button>
-        <p class="mt-5 mb-3 text-muted">&copy; Register User</p>
+        <p class="mt-5 mb-3 text-muted">&copy; Antonio.jar</p>
 
     </div>
 </div>

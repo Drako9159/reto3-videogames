@@ -1,20 +1,20 @@
 <div class="text-center login-container">
     <div class="form-signin" [formGroup]="loginForm">
-        <img class="mb-3" src="../../../../assets/user.svg" alt="" width="72" height="72"/>
-        <h1 class="h3 mb-3 font-weight-normal">Welcome</h1>
-        <label for="inputEmail" class="sr-only">Email</label>
-        <input type="email" class="form-control" id="inputEmail" placeholder="Email" required formControlName="email"/>
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required formControlName="password"/>
+        <img class="mb-3" src="../../../../assets/user.svg" alt="icon-user" width="72" height="72" draggable="false"/>
+        <h1 class="h3 mb-3 font-weight-normal">Iniciar sesión</h1>
+        <label for="inputEmail" class="sr-only">Correo</label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="Correo" required formControlName="email"/>
+        <label for="inputPassword" class="sr-only">Contraseña</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required formControlName="password"/>
         
         <p style="color: rgb(230,110,110)" *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.invalid">Password is required</p>
         <p style="color: rgb(230,110,110)" *ngIf="loginForm.get('email')?.touched && loginForm.get('email')?.invalid">Email is required</p>
         <p style="color: rgb(230,110,110)" *ngIf="userFound !== true">User not found</p>
         
 
-        <button class="btn btn-lg btn-primary btn-block m-3" (click)="onLogin()">Login</button>
-        <button class="btn btn-lg btn-secondary btn-block" (click)="onSignIn()">Register</button>
-        <p class="mt-5 mb-3 text-muted">&copy; Login User</p>
+        <button class="btn btn-lg btn-primary btn-block m-3" (click)="onLogin()">Iniciar</button>
+        <button class="btn btn-lg btn-secondary btn-block" (click)="onSignIn()">Registrarse</button>
+        <p class="mt-5 mb-3 text-muted">&copy; Antonio.jar</p>
     </div>
 </div>
 

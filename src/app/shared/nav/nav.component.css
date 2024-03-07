@@ -1,3 +1,20 @@
+.navbar{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+   box-shadow: 1px 1px 2px black;
+}
+
+.navbar img{
+  width: 50px;
+  height: 50px;
+  padding: 8px;
+  background-color: #f95959;
+  border-radius: 100%;
+  margin: 8px;
+ 
+}
+
 .separator {
   justify-content: space-between;
 }

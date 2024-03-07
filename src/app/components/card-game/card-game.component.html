@@ -1,8 +1,14 @@
 <div class="card-game">
     <h3 class="card-title">{{game.title}}</h3>
-    <img class="card-img" draggable="false"
-        src="{{game.image}}"
-        alt="master" />
+
+    <div class="mass-img">
+        <img src="../../../assets/gamepad.png" alt="icon-gamepad" class="game-pad" draggable="false"/>
+        <img class="card-img" draggable="false" src="{{game.image}}" alt="master" />
+    </div>
+
+
+
+
     <div class="release-date">
         <div class="date">
             <p>Fecha de lanzamiento: {{game.releaseDate}}</p>

@@ -1,17 +1,16 @@
-.container-fluid{
-    background-color: #233142;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.container-fluid {
+  background-color: #233142;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-p{
-    margin: 0;
-    padding: 10px;
-    color: #e3e3e3;
-    font-weight: bold;
+p {
+  margin: 0;
+  padding: 10px;
+  color: #e3e3e3;
+  font-weight: bold;
 }
-
 

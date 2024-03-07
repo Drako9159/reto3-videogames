@@ -6,7 +6,6 @@ import { LoginComponent } from './pages/auth/login/login.component';
 import { SignInComponent } from './pages/auth/sign-in/sign-in.component';
 import { AddGameComponent } from './pages/add-game/add-game.component';
 import { hasSessionGuard } from './guards/has-session/has-session.guard';
-import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 export const routes: Routes = [
   { path: 'most-populate', component: MostPopulateComponent, canActivate: [hasSessionGuard] },

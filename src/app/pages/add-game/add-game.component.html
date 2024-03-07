@@ -1,46 +1,62 @@
 <app-nav></app-nav>
 <div class="text-center add-container">
     <div class="form-add" [formGroup]="addGameForm">
-        <h1 class="h3 mb-3 font-weight-normal">Agrega nuevo vidoejuego</h1>
+        <h1 class="h3 mb-3 font-weight-normal">Agrega nuevo videojuego</h1>
         <div class="form-container">
             <div class="form-left">
-            
+
                 <label for="inputTitle" class="sr-only">Titles</label>
-                <input type="text" class="form-control" id="inputTitle" placeholder="Ingresa el titulo" required
+                <input type="text" class="form-control" id="inputTitle" placeholder="Ingresa el título" required
                     formControlName="title" />
-    
+
                 <label for="inputDescription" class="sr-only">Description</label>
-                <input type="text" class="form-control" id="inputDescription" placeholder="Ingresa una description" required
-                    formControlName="description" />
-    
+                <input type="text" class="form-control" id="inputDescription" placeholder="Ingresa una descripción"
+                    required formControlName="description" />
+
                 <label for="inputDate" class="sr-only">Date</label>
                 <input type="text" class="form-control" id="inputDate" placeholder="Ingresa una fecha de lanzamiento"
                     required formControlName="releaseDate" />
-    
+
                 <div class="form-check">
-                    <label for="inputComingSoon" class="form-check-label"><input type="checkbox" class="form-check-input"
-                            id="inputComingSoon" required formControlName="comingSoon" />Próximamente</label>
+                    <label for="inputComingSoon" class="form-check-label"><input type="checkbox"
+                            class="form-check-input" id="inputComingSoon" required
+                            formControlName="comingSoon" />Próximamente</label>
                 </div>
             </div>
-    
+
             <div class="form-right">
-    
+
                 <div class="form-group">
                     <label for="rating" class="sr-only">Calificación</label>
-                    <input type="number" class="form-control" id="rating" placeholder="Ingrese una calificación" required
-                        formControlName="rating">
+                    <input type="number" class="form-control" id="rating" placeholder="Ingrese una calificación"
+                        required formControlName="rating">
+
+
+                        <label for="rating" class="sr-only">Calificación</label>
+                        <input type="number" class="form-control" id="rating" max="5" min="1" placeholder="Ingrese una calificación"
+                            required formControlName="rating">
+                            
+
                 </div>
+
+
+
                 <div class="form-group">
                     <label for="downloads" class="sr-only">Número de descargas</label>
-                    <input type="number" class="form-control" id="downloads" placeholder="Ingrese el número de descargas"
-                        required formControlName="downloads">
+                    <input type="number" class="form-control" id="downloads"
+                        placeholder="Ingrese el número de descargas" required formControlName="downloads">
                 </div>
-                <button class="btn btn-lg btn-primary btn-block m-3">Agregar</button>
+                <div class="form-group">
+                    <label for="image" class="sr-only">Image</label>
+                    <input type="text" class="form-control" id="image" placeholder="Ingrese una imagen" required
+                        formControlName="image">
+                </div>
+                <button class="btn btn-lg btn-primary btn-block m-3" (click)="ngOnAdd()">Agregar</button>
             </div>
         </div>
 
 
 
-        
+
     </div>
 </div>

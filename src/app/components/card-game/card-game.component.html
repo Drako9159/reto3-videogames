@@ -1,11 +1,15 @@
 <div class="card-game">
     <h3 class="card-title">{{game.title}}</h3>
-    <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dmlkZW8lMjBnYW1lfGVufDB8fDB8fHww"
+    <img class="card-img" draggable="false"
+        src="{{game.image}}"
         alt="master" />
     <div class="release-date">
-        <p>Fecha de lanzamiento: {{game.releaseDate}}</p>
+        <div class="date">
+            <p>Fecha de lanzamiento: {{game.releaseDate}}</p>
+        </div>
         <div class="rating">
-            <img *ngFor="let star of getRoundedRating(game.rating)" src="../../../assets/star.png" alt="rating-star" />
+            <img draggable="false" *ngFor="let star of getRoundedRating(game.rating)" src="../../../assets/star.png"
+                alt="rating-star" />
 
 
         </div>
@@ -15,6 +19,6 @@
         <p>Description:<br />{{game.description}}</p>
     </div>
     <div class="actions">
-        <button>Add to car</button>
+        <button>Agregar al carrito</button>
     </div>
 </div>

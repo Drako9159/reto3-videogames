@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root',
@@ -12,18 +13,18 @@ export class AuthService {
   }[] = [
     {
       id: 1,
-      name: 'PA',
-      email: 'PA@mail.com',
+      name: 'master',
+      email: 'master@mail.com',
       password: 'master',
     },
   ];
-  constructor() {
+  constructor(private router: Router) {
     console.log('Auth service');
   }
 
   login(email: string, password: string): boolean {
     const userFound = this.users.find(
-      (user) => user.name === email && user.password === password
+      (user) => user.email === email && user.password === password
     );
     if (userFound) {
       localStorage.setItem('isLogged', JSON.stringify(userFound));
@@ -43,5 +44,16 @@ export class AuthService {
     const newUser = { name, email, password, id: lastUser.id + 1 };
     this.users = [...this.users, newUser];
     localStorage.setItem('isLogged', JSON.stringify(newUser));
+  }
+
+  isLogged() {
+    const isLogged = localStorage.getItem('isLogged');
+    console.log(isLogged);
+    if (isLogged) {
+      return true;
+    } else {
+      this.router.navigate(['/', 'auth', 'login']);
+      return false;
+    }
   }
 }

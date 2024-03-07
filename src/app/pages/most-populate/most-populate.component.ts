@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { CardGameComponent } from '../../components/card-game/card-game.component';
 import { Game } from '../../models/game';
 import { GamesService } from '../../service/games.service';
+import { NavComponent } from '../../shared/nav/nav.component';
 
 @Component({
   selector: 'app-most-populate',
   standalone: true,
-  imports: [CardGameComponent],
+  imports: [CardGameComponent, NavComponent],
   templateUrl: './most-populate.component.html',
   styleUrl: './most-populate.component.css',
 })

@@ -20,6 +20,7 @@ export class LoginComponent implements OnInit {
       email: new FormControl('', Validators.required),
       password: new FormControl('', Validators.required),
     });
+
   }
   onLogin() {
     console.log(this.loginForm)
@@ -40,6 +41,6 @@ export class LoginComponent implements OnInit {
     }
   }
   onSignIn() {
-    this.router.navigate(['/', 'most-populate']);
+    this.router.navigate(['/', 'auth', "sign-in"]);
   }
 }

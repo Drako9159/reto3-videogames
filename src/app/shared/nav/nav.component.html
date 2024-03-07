@@ -11,15 +11,15 @@
 
         <div class="collapse navbar-collapse separator" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a href="#" class="nav-link active" routerLink="home" aria-current="page">Más populares</a>
-                <a href="#" class="nav-link" routerLink="about-me">Más descargados</a>
-                <a href="#" class="nav-link" routerLink="contact">Próximamente</a>
-                <a href="#" class="nav-link" routerLink="contact">Agregar</a>
-
+                <a href="#" class="nav-link active" routerLink="/most-populate" aria-current="page">Más populares</a>
+                <a href="#" class="nav-link" routerLink="/most-downloaded">Más descargados</a>
+                <a href="#" class="nav-link" routerLink="/coming-soon">Próximamente</a>
+                <a href="#" class="nav-link" routerLink="/add-game">Agregar</a>
+ 
 
             </div>
             <div class="navbar-nav">
-                <a href="#" class="nav-link" routerLink="contact">Salir</a>
+                <a href="#" class="nav-link" (click)="ngLogout()">Salir</a>
             </div>
         </div>
 

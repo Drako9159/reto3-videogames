@@ -17,4 +17,16 @@ export class GamesService {
       map((data: any) => data.filter((e: any) => e.rating > 4))
     );
   }
+
+  getGamesDownloaded(): Observable<any> {
+    return this.getGames().pipe(
+      map((data: any) => data.filter((e: any) => e.downloads > 100))
+    );
+  }
+
+  getGamesComingSoon(): Observable<any> {
+    return this.getGames().pipe(
+      map((data: any) => data.filter((e: any) => e.comingSoon === true))
+    );
+  }
 }

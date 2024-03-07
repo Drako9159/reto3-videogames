@@ -1,1 +1,6 @@
-<p>coming-soon works!</p>
+<app-nav></app-nav>
+<div class="container">
+    @for (item of gameList; track item.id) {
+    <app-card-game [game]="item"></app-card-game>
+    }
+</div>
